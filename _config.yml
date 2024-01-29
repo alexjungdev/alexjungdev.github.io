@@ -14,12 +14,12 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 개발 블로그 # the main title
+title: Alex Jung Dev # the main title
 
-tagline: 공부한 내용들을 기록하는 개발자 블로그 # it will display as the sub-title
+tagline: 프론트엔드 개발자 공부 기록 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  프론트엔드 개발를 위한 여러가지 공부 및 문제해결 기록용 블로그.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -28,8 +28,8 @@ url: https://alexjungdev.github.io
 github:
   username: alexjungdev # change to your github username
 
-twitter:
-  username: twitter_username # change to your twitter username
+portfolio:
+  username: alexjungdev # change to your twitter username
 
 social:
   # Change to your full name.
@@ -38,7 +38,7 @@ social:
   email: alexjungdev@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
+    - https://alexjung-portfolio.vercel.app/ # change to your twitter homepage
     - https://github.com/alexjungdev # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -73,7 +73,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: assets/img/profile.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
