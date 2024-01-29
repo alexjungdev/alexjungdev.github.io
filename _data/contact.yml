@@ -3,8 +3,9 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: portfolio
+  icon: "fa-solid fa-user-tie"
+  url: https://alexjung-portfolio.vercel.app/
 
 - type: email
   icon: "fas fa-envelope"
