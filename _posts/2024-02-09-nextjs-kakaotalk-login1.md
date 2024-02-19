@@ -10,6 +10,18 @@ tags: [front-end,next,js,.env]     # TAG names should always be lowercase
 <br>
 <br>
 
+## **로그인 알고리즘**
+아래의 알고리즘대로 차근차근 한번 만들어보자(글을 보시는 분들이 원하는대로 알고리즘을 수정하고 바꾸셔도 됩니다).
+난 Rest API와 JavaScript 중에서 JavaScript 로그인 방식으로 개발할 것이다.
+
+1. 카카오톡 로그인 버튼 클릭
+2. 카카오톡 로그인창으로 리디렉트
+3. 권한 선택 이후 로그인 완료
+4. 302 Redirect로 인가 코드 전달
+5. (Back-End) 토큰 요청 & 토큰 발급
+6. (Back-End) 토큰을 통해 유저 정보 불러오기
+7. (Back-End) Firebase Functions를 이용하여 유저 정보로 Custom Login
+
 ## **1. 카카오 개발자 등록 & 앱 생성**
 ![Kakao Developer1](/assets/img/kakao1.png)
 Kakao Developer로 가서 개발자 등록을 하고 사용할 애플리케이션을 추가한다(애플리케이션에는 Android, Ios, Web 전부 있다).
@@ -29,3 +41,8 @@ Kakao Developer로 가서 개발자 등록을 하고 사용할 애플리케이�
 유저들이 카카오톡으로 로그인을 할때 이메일을 필수로 받기 위해 권한을 설정해야한다. 하지만 기본적으로는 프로필 권한만 설정할 수 있다. 이메일 권한도 설정할 수 있게 하기위해 **개인 개발자 비즈 앱 전환**을 눌러준다. 그러면 **카카오계정(이메일)**을 필수 동의할 수 있게된다.
 <br>
 <br>
+
+## **4. Redirect URL 설정**
+![Kakao Developer6](/assets/img/kakao_redirect.png)
+이메일 권한도 설정하였다면 이제 로그인 이후 리디렉트를 하기위한 설정을 해준다.
+나같은 경우엔 app/kakao 폴더를 만들고 app/kakao에 리디렉트 페이지를 만들기 위하여 사진처럼 설정을 했다.
